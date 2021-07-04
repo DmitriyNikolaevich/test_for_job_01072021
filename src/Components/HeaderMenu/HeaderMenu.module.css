@@ -15,6 +15,21 @@
     margin-top: 32px;
 }
 
+.menu button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+}
+
+.submenu button {
+    width: 150px;
+    height: 50px;
+    background: #F7F6F5;
+    border: 1px solid #EFEFEF;
+    color: #9D9D9D;
+}
+
 .redDots {
     width: 70px;
     display: flex;

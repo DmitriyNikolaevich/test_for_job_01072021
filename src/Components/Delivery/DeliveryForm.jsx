@@ -3,7 +3,7 @@ import s from './Delivery.module.css'
 import fillRequest from '../../images/fillRequest.svg'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { getDeliveryFormData } from '../../store/mainPageReducerSelectors'
+import { getDeliveryFormData, getIsHideFillRequesSelector } from '../../store/mainPageReducerSelectors'
 import { setDeliveryFormNumberAC, setDeliveryFormStreetAC } from '../../store/mainPageReducer'
 
 export const DeliveryForm = () => {
@@ -11,6 +11,7 @@ export const DeliveryForm = () => {
     const dispatch = useDispatch()
 
     const deliveryFormData = useSelector(getDeliveryFormData)
+    const hideFillReques = useSelector(getIsHideFillRequesSelector)
 
     const onStreetChange = (e) => {
         dispatch(setDeliveryFormStreetAC(e.target.value))
@@ -33,11 +34,14 @@ export const DeliveryForm = () => {
                         <input placeholder='Введите дом...' value={deliveryFormData.number} onChange={onNumberChange}></input>
                     </div>
                 </div>
+                <div hidden={hideFillReques}>
                 <div className={deliveryFormData.street === '' 
                                     ? s.fillRequestStreet : deliveryFormData.number === '' 
                                     ? s.fillRequestHouseNumber : s.fillRequesHide}>
                     <img src={fillRequest} />
                 </div>
+                </div>
+                
         </div>
     )
 }

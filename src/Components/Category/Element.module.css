@@ -1,6 +1,33 @@
+.gray {
+    background: #F7F6F5;
+}
+
+.white {
+    background: none;
+}
+
 .wrapper {
     width: 288px;
     height: 360px;
+    margin: 40px 0px;
+}
+
+#white:hover {
+    background: #ffffff;
+    border-radius: 8px;
+    -webkit-filter: grayscale(50%);
+-moz-filter: grayscale(50%);
+-ms-filter: grayscale(50%);
+-o-filter: grayscale(50%);
+}
+
+#gray:hover {
+    background: #F7F6F5;
+    border-radius: 8px;
+    -webkit-filter: grayscale(50%);
+-moz-filter: grayscale(50%);
+-ms-filter: grayscale(50%);
+-o-filter: grayscale(50%);
 }
 
 .bodydiv div:first-child {
@@ -33,4 +60,66 @@
     font-size: 32px;
     line-height: 40px;
     color: #E4002B;
+}
+
+.bodydiv div:nth-child(4) {
+    position: relative;
+    top: -190px;
+    left: 190px;
+}
+
+.bodydiv div:nth-child(4) button {
+    border: none;
+    background: none;
+}
+
+.orderControll {
+    position: relative;
+    top: -185px;
+    left: 125px;
+    height: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.hideOrderControllButtons {
+    display: none;
+}
+
+.orderControll button {
+    background: black;
+    border: none;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    text-align: center;
+    height: 40px;
+    width: 36px;
+}
+
+.orderControll div:first-child button {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.orderControll div:nth-child(2) span {
+    background: black;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+    height: 40px;
+    width: 32px;
+}
+
+.orderControll div:nth-child(3) button {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
 }

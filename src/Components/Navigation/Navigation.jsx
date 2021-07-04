@@ -2,6 +2,7 @@ import React from 'react'
 import s from './Navigation.module.css'
 import { useSelector } from 'react-redux'
 import { getCategoriesSelector } from '../../store/mainPageReducerSelectors'
+import { NavigationButton } from './NavigationButton'
 
 export const Navigation = () => {
 
@@ -9,9 +10,9 @@ export const Navigation = () => {
 
     return (
         <div className={s.position}>
-        <div className={s.wrapper}>
-            {categories.map(item => <div className={s.buttons}><button onClick={() => window.location = `#${item.name}`}>{item.name}</button></div>)}
-        </div>
+            <div className={s.wrapper}>
+                {categories.map(item => <NavigationButton key={item.id.toString()} item={item} />)}
+            </div>
         </div>
     )
 }

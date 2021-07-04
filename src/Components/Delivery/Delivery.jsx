@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { setDeliveryAC } from '../../store/mainPageReducer'
 import { getDeliverySelector } from '../../store/mainPageReducerSelectors'
@@ -11,19 +11,12 @@ export const Delivery = () => {
 
     const delivery = useSelector(getDeliverySelector)
 
-    const [deliveryStyle, setDeliveryStyle] = useState(s.selectedButton)
-    const [takeawayStyle, setTakeawayStyle] = useState(s.unselectedButton)
-
     const deliveryButtonClick = () => {
         dispatch(setDeliveryAC(true))
-        setDeliveryStyle(s.selectedButton)
-        setTakeawayStyle(s.unselectedButton)
     }
 
     const takeawayButtonClick = () => {
         dispatch(setDeliveryAC(false))
-        setDeliveryStyle(s.unselectedButton)
-        setTakeawayStyle(s.selectedButton)
     }
 
     return (
@@ -32,8 +25,8 @@ export const Delivery = () => {
                 {delivery && <DeliveryForm />}
             </div>
             <div className={s.buttons}>
-                <button className={deliveryStyle} onClick={deliveryButtonClick}>Доставка</button>
-                <button className={takeawayStyle} onClick={takeawayButtonClick}>Самовывоз</button>
+                <button className={delivery ? s.selectedButton : s.unselectedButton} onClick={deliveryButtonClick}>Доставка</button>
+                <button className={delivery ? s.unselectedButton : s.selectedButton} onClick={takeawayButtonClick}>Самовывоз</button>
             </div>
         </div>
     )

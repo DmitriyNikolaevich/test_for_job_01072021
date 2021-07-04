@@ -4,7 +4,7 @@ import { Category } from './Components/Category/Category'
 import { Footer } from './Components/Footer/Footer'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { getStartDataSagasAC, setDeliveryAC } from './store/mainPageReducer'
+import { getStartDataSagasAC } from './store/mainPageReducer'
 import { getCategoriesSelector, getProductsSelector } from './store/mainPageReducerSelectors'
 import { Navigation } from './Components/Navigation/Navigation'
 

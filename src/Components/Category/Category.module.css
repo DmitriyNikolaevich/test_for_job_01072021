@@ -1,10 +1,17 @@
-.backgroung {
+.gray {
     background: #F7F6F5;
+}
+
+.white {
+    background: none;
 }
 
 .wrapper {
     width: 86%;
     margin-left: 7%;
+}
+.wrapper h1 {
+    padding-top: 40px;
 }
 
 .elements {

@@ -9,7 +9,12 @@ export const commonAPI = {
 
     //забирает список товаров с сервера
     getProducts() {
-        return instance.get(`/getproducts`).then(res => res.data)
+        return instance.get(`getproducts`).then(res => res.data)
+    },
+
+    //Отправляет заказ
+    postOrder(order) {
+        return instance.post('postorder', order)
     }
 
 }
