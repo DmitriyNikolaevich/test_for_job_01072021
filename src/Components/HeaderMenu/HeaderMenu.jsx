@@ -32,9 +32,7 @@ export const HeaderMenu = () => {
     }
 
     const onBasketClick = () => {
-        console.log(basketOrder)
         if(basketOrder.length === 0) {
-            console.log('empty basket')
         } else if((delivery && (!!deliveryAddress.street && !!deliveryAddress.number)) || !delivery) {
             dispatch(postOrderSagasAC({order: basketOrder, delivery: delivery, deliveryAddress: deliveryAddress}))
         } else {
