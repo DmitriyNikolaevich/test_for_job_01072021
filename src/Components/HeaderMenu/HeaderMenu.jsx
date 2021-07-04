@@ -43,7 +43,7 @@ export const HeaderMenu = () => {
     return (
         <div className={s.wrapper}>
             <div className={s.menu}>
-                <button onClick={onMenuClick}><img src={BurgerMenu} /></button>
+                <button onClick={onMenuClick}><img alt='Menu' src={BurgerMenu} /></button>
                 <div className={s.submenu} hidden={hideMenu}><button onClick={deliveryButtonClick}>Доставка</button></div>
                 <div className={s.submenu} hidden={hideMenu}><button onClick={takeawayButtonClick}>Самовывоз</button></div>
             </div>
@@ -52,7 +52,7 @@ export const HeaderMenu = () => {
                 <div className={s.redDot}></div>
                 <div className={s.redDot}></div>
             </div>
-            <div className={s.basket}><button onClick={onBasketClick}>{basket} &#8381; <img src={basketIcon}/></button></div>
+            <div className={s.basket}><button onClick={onBasketClick}>{basket} &#8381; <img alt='' src={basketIcon}/></button></div>
         </div>
     )
 }

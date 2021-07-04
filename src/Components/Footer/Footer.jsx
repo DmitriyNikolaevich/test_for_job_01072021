@@ -63,14 +63,14 @@ export const Footer = () => {
             <div className={s.bottom}>
                 <div className={s.sideBlock}></div>
                 <div className={s.middleBlock}>
-                    <div className={s.socLogo}><a href="" ><img src={vk} /></a></div>
-                    <div className={s.socLogo}><a href="" ><img src={facebook} /></a></div>
-                    <div className={s.socLogo}><a href="" ><img src={twitter} /></a></div>
-                    <div className={s.socLogo}><a href="" ><img src={ok} /></a></div>
+                    <div className={s.socLogo}><a href="vk.com" ><img alt='vk' src={vk} /></a></div>
+                    <div className={s.socLogo}><a href="facebook.com" ><img alt='facebook' src={facebook} /></a></div>
+                    <div className={s.socLogo}><a href="twitter.com" ><img alt='twitter' src={twitter} /></a></div>
+                    <div className={s.socLogo}><a href="ok.com" ><img alt='ok' src={ok} /></a></div>
                 </div>
                 <div className={s.sideBlock}>
-                    <div className={s.storesLogo}><a href="" ><img src={googlePlay} /></a></div>
-                    <div className={s.storesLogo}><a href="" ><img src={appStore} /></a></div>
+                    <div className={s.storesLogo}><a href="play.google.com" ><img alt='google play' src={googlePlay} /></a></div>
+                    <div className={s.storesLogo}><a href="https://www.apple.com/ru/app-store/" ><img alt='app store' src={appStore} /></a></div>
                 </div>
             </div>
         </div>

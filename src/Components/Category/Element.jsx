@@ -39,7 +39,7 @@ export const Element = ({ item, basketStatus, background }) => {
                 </div>
                 <div hidden={basketStatus.length !== 0}>
                     <button onClick={onFirstAddButtonClick}>
-                        <img src={FirstAddIcon} />
+                        <img alt='добавить в карзину' src={FirstAddIcon} />
                     </button>
                 </div>
                 <div className={`${s.orderControll} ${basketStatus.length === 0 && s.hideOrderControllButtons}`}>

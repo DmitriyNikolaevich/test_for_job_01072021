@@ -1,14 +1,15 @@
 .wrapper {
-    height: 224px;
+    min-height: 224px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap-reverse;
     margin-top: 110px;
 }
 
 .deliveryAddress {
-    position: absolute;
     margin-top: 45px;
     display: flex;
+    flex-wrap: wrap;
     z-index: 1;
 }
 
@@ -58,17 +59,24 @@
 
 .fillRequestStreet img {
     position: absolute;
-    top: 340px;
+    top: -25px;
+    z-index: -10;
 }
 
 .fillRequestHouseNumber img {
     position: absolute;
-    top: 340px;
-    left: 380px;
+    top: -25px;
+    left: 0px;
+    z-index: -10;
 }
 
 .fillRequesHide img {
     display: none;
+}
+
+.hideContainer {
+    position: relative;
+    min-height: 60px;
 }
 
 .buttons button {

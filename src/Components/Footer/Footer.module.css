@@ -1,12 +1,12 @@
 .wrapper {
-    height: 614px;
+    min-height: 614px;
     width: 86%;
     margin-left: 7%;
 }
 
 .top {
     width: 160px;
-    margin: 0 auto;
+    margin: 0px auto;
     display: flex;
     justify-content: space-between;
 }
@@ -20,6 +20,7 @@
 .middle {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 82px;
 }
 
@@ -56,18 +57,21 @@
 .bottom {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 80px;
 }
 
 .sideBlock {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     width: 30%;
 }
 
 .middleBlock {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 20%;
 }
 
