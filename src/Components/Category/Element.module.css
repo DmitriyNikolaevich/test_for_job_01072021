@@ -1,0 +1,36 @@
+.wrapper {
+    width: 288px;
+    height: 360px;
+}
+
+.bodydiv div:first-child {
+    height: 229px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bodydiv div:nth-child(2) {
+    height: 64px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.bodydiv div:nth-child(3) {
+    height: 55px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+    color: #E4002B;
+}

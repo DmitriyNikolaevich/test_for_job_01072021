@@ -1,0 +1,51 @@
+.wrapper {
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 100px;
+    text-align: left;
+}
+
+.menu img {
+    height: 25px;
+    width: 25px;
+    margin-top: 32px;
+}
+
+.redDots {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.redDot {
+    width: 14px;
+    height: 17px;
+    background: #E4002B;
+}
+
+.basket {
+    width: 100px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.basket button {
+    border: none;
+    background: #E4002B;
+    border-radius: 18px;
+    height: 36px;
+    width: 82px;
+    margin-top: 33px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.basket img {
+    height: 24px;
+}

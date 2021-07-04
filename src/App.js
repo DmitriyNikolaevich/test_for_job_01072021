@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.module.css'
+import { Header } from './Components/Header/Header'
+import { Category } from './Components/Category/Category'
+import { Footer } from './Components/Footer/Footer'
+import { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { getStartDataSagasAC, setDeliveryAC } from './store/mainPageReducer'
+import { getCategoriesSelector, getProductsSelector } from './store/mainPageReducerSelectors'
+import { Navigation } from './Components/Navigation/Navigation'
 
-function App() {
+const App = () => {
+
+  const dispatch = useDispatch()
+
+  const categories = useSelector(getCategoriesSelector)
+  const products = useSelector(getProductsSelector)
+
+  useEffect(() => {
+    dispatch(getStartDataSagasAC())
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Navigation />
+      {categories.map(item => products.filter(el => el.categories_id === item.id).length ? <Category key={item.id.toString()} item={item} products={products.filter(el => el.categories_id === item.id)} /> : '')}
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

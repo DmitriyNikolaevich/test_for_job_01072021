@@ -1,0 +1,99 @@
+.wrapper {
+    height: 224px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+}
+
+.deliveryAddress {
+    position: absolute;
+    margin-top: 45px;
+    display: flex;
+    z-index: 1;
+}
+
+.deliveryAddress span {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+    margin-right: 12px;
+}
+
+.deliveryAddress input {
+    background: #F7F6F5;
+    border-radius: 4px;
+    border: none;
+    height: 42px;
+    width: 200px;
+    margin-right: 43px;
+    z-index: 1;
+}
+
+.deliveryAddress input::-webkit-input-placeholder {
+    position: absolute;
+    font-family: 'Abel', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #9D9D9D;
+    margin-left: 16px;
+    top: calc(50% - 22px/2);
+}
+
+.deliveryAddress input::-moz-placeholder {
+    position: absolute;
+    font-family: 'Abel', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #9D9D9D;
+    margin-left: 16px;
+    top: calc(50% - 22px/2);
+    z-index: -1;
+}
+
+.fillRequestStreet img {
+    position: absolute;
+    top: 340px;
+}
+
+.fillRequestHouseNumber img {
+    position: absolute;
+    top: 340px;
+    left: 380px;
+}
+
+.fillRequesHide img {
+    display: none;
+}
+
+.buttons button {
+    width: 150px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.selectedButton {  
+    border: none;
+    background: #E4002B;
+    color: white;
+}
+
+.unselectedButton {
+    background: #F7F6F5;
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
+    color: #9D9D9D;
+}
+
+.name span {
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 72px;
+}

@@ -1,0 +1,14 @@
+.backgroung {
+    background: #F7F6F5;
+}
+
+.wrapper {
+    width: 86%;
+    margin-left: 7%;
+}
+
+.elements {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
